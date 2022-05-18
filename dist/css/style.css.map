@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,AAAC,CACE,UAAU,CAAE,MAAM,CACrB",
+    "sources": [
+        "../../app/scss/style.scss",
+        "../../app/scss/_menukort.scss",
+        "../../app/scss/_nav.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
