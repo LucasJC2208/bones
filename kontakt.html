@@ -9,5 +9,62 @@
     <title>Kontakt</title>
 </head>
 <body>
+    <div class="kontakt-bottom">
+        <div class="kontakt-container">
+          <h2 class="flex flex-jc-c">Send os en besked</h2>
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Fornavn</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="fname"
+                  name="name"
+                  placeholder="Dit navn.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="emne">Emne</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="emne" name="subject" placeholder="Emne" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="email">Email</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="email"
+                  name="mail"
+                  placeholder="Din email.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="text">Besked</label>
+              </div>
+              <div class="col-75">
+                <textarea
+                  id="text"
+                  name="message"
+                  placeholder="Skriv din besked.."
+                  style="height: 200px"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <button class="submitbtn" type="submit" name="submit">
+                Send mail
+              </button>
+            </div>
+      </div>
+      
 </body>
 </html>
