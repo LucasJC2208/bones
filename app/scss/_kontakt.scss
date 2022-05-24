@@ -1,0 +1,46 @@
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type="submit"] {
+    background-color: $clr-dark-blue;
+    color: white;
+    padding: 3% 30%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    margin: 5% auto;
+    font-family: Ironstrike, sans-serif;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: $clr-light-purple;
+  }
+  
+  .kontakt-container {
+    border-radius: 5px;
+    padding: 10px 50px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    width: 90%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
