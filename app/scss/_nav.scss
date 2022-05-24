@@ -1,0 +1,190 @@
+.navcolor {
+    display: block;
+    background-color: black;
+    opacity: 80%;
+    height: 6rem;
+    position: absolute;
+    z-index: 100;
+    margin-left: -8px;
+    margin-top: -8px;
+    position: fixed;
+  }
+  
+  .linksbar {
+    display: none;
+  }
+  
+  .boneslogo {
+    width: clamp(1%, 5.5rem, 7rem);
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1.1rem;
+  }
+  
+  .burgerbox {
+    z-index: 1;
+    width: 100%;
+    background-color: $clr-off-black;
+    background-size: cover;
+  }
+  
+  .navbar {
+    width: 18.75rem;
+    height: 100%;
+    background-color: $clr-off-black;
+    position: fixed;
+    top: 0;
+    left: -18.75rem;
+    display: flex;
+    align-items: center;
+    transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+  }
+  
+  .change {
+    left: 0;
+  }
+  
+  .burgermenu {
+    width: 3.188rem;
+    height: 2.875rem;
+    position: fixed;
+    top: 0.85rem;
+    left: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .linje {
+    width: 100%;
+    height: 0.288rem;
+    background-color: $clr-white;
+    transition: all 0.8s;
+  }
+  
+  .change .linje-1 {
+    transform: rotateZ(-405deg) translate(-0.5rem, 0.875rem);
+  }
+  
+  .change .linje-2 {
+    opacity: 0;
+  }
+  
+  .change .linje-3 {
+    transform: rotateZ(405deg) translate(-0.5rem, -0.875rem);
+  }
+  
+  .nav-list {
+    text-align: center;
+  }
+  
+  .nav-punkt {
+    list-style: none;
+    margin: 1.563rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 22px;
+    color: #e4f0f8;
+    font-weight: 300;
+    letter-spacing: 0.063rem;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0.188rem 0;
+  }
+  
+  .nav-link::before,
+  .nav-link::after {
+    content: "";
+    width: 100%;
+    height: 0.125rem;
+    background-color: $clr-dark-blue;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+  
+  .nav-link::after {
+    bottom: 0;
+    transform-origin: right;
+  }
+  
+  .nav-link::before {
+    top: 0;
+    transform-origin: left;
+  }
+  
+  .nav-link:hover::before,
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* webquery tablet */
+  @media screen and (min-width: 768px) {
+    .linksbar {
+      display: none;
+    }
+  }
+  
+  /* webquery pc*/
+  @media screen and (min-width: 1024px) {
+    .navcolor {
+      background-color: black;
+      opacity: 80%;
+      height: 7rem;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .linksbar {
+      text-align: center;
+      padding: 0 3rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+      margin: 0 auto;
+    }
+    .linksbar li {
+      list-style: none;
+      font-size: $font-sm;
+      font-family: Ironstrike, sans-serif;
+      font-weight: 700;
+      padding: 0 2.5rem;
+    }
+  
+    .linksbar a {
+      color: $clr-white;
+      opacity: 100%;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      z-index: 1;
+    }
+  
+    .linksbar .hlink:hover {
+      background-color: $clr-dark-blue;
+    }
+  
+    .current {
+      background-color: $clr-dark-blue;
+    }
+  
+    .linksbar {
+      font-size: 1rem;
+    }
+  
+    .burgerbox {
+      display: none;
+    }
+  
+    .boneslogo {
+      margin: 0;
+      padding: 0;
+    }
+  }
