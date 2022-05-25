@@ -1,3 +1,7 @@
+* {
+    background-color: #EBDDDC;
+}
+
 //Top of page
 
 .boxmenu-time1 {
@@ -165,5 +169,12 @@
 
 
   //Hovedretter start
-
-  
+  .wrapper-grid-vard__container { 
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  height: 25px;
+  justify-content: center;
+}
