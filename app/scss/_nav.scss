@@ -33,14 +33,14 @@
     background-color: #EDEADE;
     position: fixed;
     top: 0;
-    left: -18.75rem;
+    right: -18.75rem;
     display: flex;
     align-items: center;
-    transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
   }
   
   .change {
-    left: 0;
+    right: 0;
   }
   
   .burgermenu {
@@ -58,7 +58,7 @@
   .linje {
     width: 100%;
     height: 0.288rem;
-    background-color: red;
+    background-color: white;
     transition: all 0.8s;
   }
   
