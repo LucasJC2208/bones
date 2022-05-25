@@ -4,7 +4,7 @@ label {
   }
   
   input[type="submit"] {
-    background-color: $clr-dark-blue;
+    background-color: red;
     color: white;
     padding: 3% 30%;
     font-size: 24px;
@@ -14,11 +14,11 @@ label {
     cursor: pointer;
     display: block;
     margin: 5% auto;
-    font-family: Ironstrike, sans-serif;
+    font-family: sans-serif;
   }
   
   input[type="submit"]:hover {
-    background-color: $clr-light-purple;
+    background-color: red;
   }
   
   .kontakt-container {
@@ -27,14 +27,14 @@ label {
   }
   
   .col-25 {
-    float: left;
+    
     width: 30%;
-    margin-top: 6px;
+    margin-top: 4px;
   }
   
   .col-75 {
     width: 90%;
-    margin-top: 6px;
+    margin-top: 4px;
   }
   
   /* Clear floats after the columns */
@@ -42,5 +42,14 @@ label {
     content: "";
     display: table;
     clear: both;
+  }
+
+  .submitbtn {
+    margin-top: 10px;
+    background-color: #B8292F;
+  }
+
+  .submitbtn:hover {
+    background-color: #8A1A1F;
   }
   

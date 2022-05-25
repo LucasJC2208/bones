@@ -28,46 +28,30 @@
   }
   
   p {
-    font-size: $font-xs-fallback;
-    font-size: $font-xs;
+    font-size: 17px;
+    font-size: 10px;
     line-height: 1.5;
   
-    @include breakpoint-up(computer) {
-      font-size: $font-sm-fallback;
-      font-size: $font-sm;
-    }
   }
   
   h1 {
-    font-size: $font-l-fallback;
-    font-size: $font-l;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 5rem;
-    color: $clr-dark-blue;
-    @include breakpoint-up(computer) {
-      font-size: $font-xl-fallback;
-      font-size: $font-xl;
-    }
+    color: blue;
   }
   
   h2 {
     font-weight: 700;
-    font-size: $font-med-fallback;
-    font-size: $font-med;
-    color: $clr-dark-blue;
-    font-family: Ironstrike, sans-serif;
+    font-size: 10px;
+    color: blue;
+    font-family: sans-serif;
   }
   h3 {
     font-weight: 500;
     font-size: 20px;
     font-size: 2rem;
     margin-bottom: 2rem;
-  
-    @include breakpoint-up(computer) {
-      margin-bottom: 3rem;
-      font-size: $font-med-fallback;
-      font-size: $font-med;
-    }
   }
   
   // Spacing
@@ -80,22 +64,11 @@
       padding-bottom: 3rem;
       padding-left: 2.4rem;
   
-      @include breakpoint-up(computer) {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        padding-left: 6rem;
-        padding-right: 6rem;
-      }
     }
   
     &--py {
       padding-top: 3rem;
       padding-bottom: 3rem;
-  
-      @include breakpoint-up(computer) {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-      }
     }
     &--px {
       padding-right: 2.4rem;
@@ -104,10 +77,7 @@
     &--section {
       padding-top: 6rem;
       padding-bottom: 6rem;
-      @include breakpoint-up(computer) {
-        padding-top: 14rem;
-        padding-bottom: 14rem;
-      }
+      
     }
   }
   
@@ -135,15 +105,3 @@
     }
   }
   
-  // Visibility
-  .hide-for-mobile {
-    @include breakpoint-down(ipad) {
-      display: none;
-    }
-  }
-  
-  .hide-for-desktop {
-    @include breakpoint-up(computer) {
-      display: none;
-    }
-  }
