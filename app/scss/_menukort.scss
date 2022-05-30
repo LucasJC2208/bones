@@ -1,7 +1,3 @@
-* {
-    background-color: #EBDDDC;
-}
-
 //Top of page
 
 .boxmenu-time1 {
@@ -169,12 +165,19 @@
 
 
   //Hovedretter start
-  .wrapper-grid-vard__container { 
-  padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  height: 25px;
-  justify-content: center;
-}
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    background-color: #8A1A1F;
+    border-radius: 25px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+    color: #FFF;
+  }
