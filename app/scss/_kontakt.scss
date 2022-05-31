@@ -1,29 +1,37 @@
+.infoboks {
+  text-emphasis: none;
+  background-color: #E0DDCF;
+  margin: 50px 40px 20px;
+  padding: 10px 50px 20px 50px;
+  align-items: center;
+}
+
 label {
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
   
   input[type="submit"] {
-    background-color: red;
+    background-color: #B8292F;
     color: white;
-    padding: 3% 30%;
-    font-size: 24px;
+    padding: 2% 15%;
+    font-size: 18px;
     font-weight: 700;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     display: block;
-    margin: 5% auto;
+    margin: 5% 14%;
     font-family: sans-serif;
   }
   
   input[type="submit"]:hover {
-    background-color: red;
+    background-color: #8A1A1F;
   }
   
   .kontakt-container {
     border-radius: 5px;
-    padding: 10px 50px;
+    padding: 10% 25%;
   }
   
   .col-25 {
@@ -37,19 +45,71 @@ label {
     margin-top: 4px;
   }
   
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  /*tablet*/
+  @media screen and (min-width: 768px) {
+    .infoboks {
+      height: 200px;
+      margin: 50px 250px 10px;
+      padding: 20px 50px 10px 50px;
+      align-items: center;
   }
 
-  .submitbtn {
-    margin-top: 10px;
-    background-color: #B8292F;
+  .col-25 {
+    align-items: center;
+    width: 40%;
+    margin-top: 2px;
+    margin-left: 25%;
   }
 
-  .submitbtn:hover {
-    background-color: #8A1A1F;
+  .col-75 {
+    align-items: center;
+    width: 100%;
+    margin-top: 2px;
+    margin-left: 25%;
+  }
+
+  input[type="submit"] {
+    margin-left: 24%;
+  }
+  
+
+}
+  /*smol pc*/
+  @media screen and (min-width: 992px) {
+
+  }
+
+  /*huge*/
+  @media screen and (min-width: 1280px) {
+    .infoboks {
+      height: 200px;
+      margin: 50px 700px 10px;
+      padding: 20px 50px 10px 50px;
+      align-items: center;
+      float: right;
+  }
+  .infoboks p {
+    font-size: 15px;
+  }
+
+  .col-25 {
+    float: left;
+    width: 100%;
+    margin-top: 2px;
+    margin-left: 10%;
+  }
+
+  .col-75 {
+    float: left;
+    width: 100%;
+    margin-top: 2px;
+    margin-left: 10%;
+  }
+
+  input[type="submit"] {
+    float: left;
+    margin: 5% 14%;
+  }
+
   }
   
