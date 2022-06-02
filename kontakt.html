@@ -9,7 +9,7 @@
     <title>Kontakt</title>
 </head>
 <body>
-   
+  
   <div class="infoboks">
     <h2>Vi vil altid gerne høre fra dig</h2>
     <p>Bone's Restaurenter</p>
@@ -21,60 +21,56 @@
       <p>E-mail: bones@bones.dk</p>
     
   </div>
-  <div class="kontakt-bottom">
-        <div class="kontakt-container">
-          <h2 class="flex flex-jc-c">Send os en besked</h2>
-            <div class="row">
-              <div class="col-25">
-                <label for="fname">Fornavn</label>
-              </div>
-              <div class="col-75">
-                <input
-                  type="text"
-                  id="fname"
-                  name="name"
-                  placeholder="Dit navn.."
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="emne">Emne</label>
-              </div>
-              <div class="col-75">
-                <input type="text" id="emne" name="subject" placeholder="Emne" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="email">Email</label>
-              </div>
-              <div class="col-75">
-                <input
-                  type="text"
-                  id="email"
-                  name="mail"
-                  placeholder="Din email.."
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="text">Besked</label>
-              </div>
-              <div class="col-75">
-                <textarea
-                  id="text"
-                  name="message"
-                  placeholder="Skriv din besked.."
-                  style="height: 200px"
-                ></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <input type="submit" value="SEND" />
-            </div>
-      </div>
+
+    <div class="containerkontakt">
+        <form action="action_page.php">
       
+          <label for="fnavn">Fornavn</label>
+          <input type="text" id="fnavn" name="fornavn" placeholder="Fornavn...">
+      
+          <label for="enavn">Efternavn</label>
+          <input type="text" id="enavn" name="efternavn" placeholder="Efternavn...">
+
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Mail...">
+      
+          <label for="restaurant">Restaurant</label>
+          <select id="restaurant" name="restaurant">
+            <option value="aalborgc">Aalborg C</option>
+            <option value="aalborgcity">Aalborg City Syd / Skalborg</option>
+            <option value="aarhusc">Aarhus C</option>
+            <option value="aarhusv">Aarhus V (Tilst)</option>
+            <option value="amager">Amager</option>
+            <option value="billund">Billund - Lalandia</option>
+            <option value="esbjerg ">Esbjerg</option>
+            <option value="frederikshavn">Frederikshavn</option>
+            <option value="herlev">Herlev</option>
+            <option value="herning">Herning</option>
+            <option value="hjorring">Hjørring</option>
+            <option value="holstebro">Holstrebro</option>
+            <option value="horsens">Horsens</option>
+            <option value="kolding">Kolding</option>
+            <option value="koge">Køge</option>
+            <option value="nuuk">Nuuk</option>
+            <option value="naestved">Næstved</option>
+            <option value="odense">Odense</option>
+            <option value="randers">Randers</option>
+            <option value="roskilde">Roskilde</option>
+            <option value="rodby">Rødby - Lalandia</option>
+            <option value="silkeborg">Silkeborg</option>
+            <option value="sonderborg">Sønderborg</option>
+            <option value="valby">Valby</option>
+            <option value="vejle">Vejle</option>
+            <option value="viborg">Viborg</option>
+          </select>
+      
+          <label for="besked">Besked</label>
+          <textarea id="besked" name="besked" placeholder="Skriv din besked..." 
+          style="height:200px"></textarea>
+      
+          <input type="send" value="Send">
+      
+        </form>
+      </div>
 </body>
 </html>
