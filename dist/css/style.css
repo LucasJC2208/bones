@@ -245,7 +245,7 @@ h3 { font-weight: 500; font-size: 20px; font-size: 2rem; margin-bottom: 2rem; }
 
 .flex-ai-st { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
-.infoboks { background-color: #E0DDCF; margin: 10% 10% 1%; padding: 5% 10% 5% 10%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.infoboks { background-color: #E0DDCF; margin: 0% 10% 1%; padding: 30% 10% 5% 10%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .label { color: black; }
 
@@ -257,7 +257,11 @@ input[type=send]:hover { background-color: #8A1A1F; }
 
 .containerkontakt { margin: 10% 5% 5%; border-radius: 5px; background-color: #f2f2f2; padding: 20px; }
 
-@media screen and (min-width: 1280px) { .infoboks { height: 100%; padding: 2% 5% 2% 5%; float: right; }
+@media screen and (max-width: 768px) { .infoboks { height: 100%; padding: 2% 5% 2% 5%; margin: 10% 25%; }
+  .infoboks p { font-size: 15px; }
+  input[type=send] { margin-left: 32.5%; } }
+
+@media screen and (min-width: 1280px) { .infoboks { height: 100%; padding: 2% 5% 2% 5%; margin-top: 10%; float: right; }
   .infoboks p { font-size: 15px; }
   .containerkontakt { margin-right: 50%; margin-left: 5%; padding: 5% 5% 5% 5%; } }
 /*# sourceMappingURL=style.css.map */

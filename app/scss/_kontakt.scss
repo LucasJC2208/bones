@@ -44,11 +44,24 @@ input[type=text], select, textarea {
     padding: 20px;
   }
 
+  @media screen and (max-width: 768px) {
+    .infoboks {
+      height: 100%;
+      padding: 2% 5% 2% 5%;
+      margin: 10% 25%
+    }
+  .infoboks p {
+    font-size: 15px;
+  }
+
+}
+
 
   @media screen and (min-width: 1280px) {
     .infoboks {
       height: 100%;
       padding: 2% 5% 2% 5%;
+      margin-top: 10%;
       float: right;
   }
   .infoboks p {
